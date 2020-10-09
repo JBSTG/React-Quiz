@@ -1,0 +1,152 @@
+﻿body {
+
+}
+
+@font-face{
+    font-family:roboto-regular;
+    src:url("Fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url("Fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: roboto-thin;
+    src: url("Fonts/Roboto-Thin.ttf");
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.hidden{
+    visibility:hidden;
+}
+
+.quiz-header {
+    font-family: roboto-bold;
+    background-color: #282c34;
+    margin-bottom: 0px;
+    border-radius: 0%;
+}
+.container-fluid > .jumbotron{
+    border-radius:0%;
+}
+.quiz-header h1 {
+    color: #61dafb;
+}
+.quiz-header p{
+    font-family:roboto-thin;
+    color:white;
+}
+
+.question {
+    font-family: roboto-regular;
+    color: black;
+    font-size:1.5em;
+    margin-bottom:3vh;
+}
+.question p {
+    color: #282c34;
+    text-decoration:underline;
+}
+.question button{
+    display:block;
+    width:100%;
+    text-align:left;
+}
+
+.selected-button {
+    font-family: roboto-regular;
+    background-color: #61dafb;
+    color: #282c34;
+    border: 0px;
+}
+.unselected-button {
+    font-family: roboto-regular;
+    background-color: white;
+    color: #282c34;
+    border: 0px;
+    background-color:aliceblue;
+}
+
+.submit-button{
+    display:block;
+    margin:auto;
+    height:8vh;
+    width:50%;
+    background-color:forestgreen;
+    color:white;
+    border:0px;
+}
+
+.question-bar {
+    padding: 15px;
+    background-color: #282c34;
+    text-align: center;
+    width: inherit;
+}
+.question-bar p{
+    font-family:roboto-thin;
+    color:white;
+}
+
+.sticky {
+    position: sticky;
+    width:inherit;
+    top:0;
+    width:100%;
+    z-index:999;
+}
+@supports not (position:sticky) {
+    .sticky{
+        position:fixed;
+        width:95%;
+    }
+    .sticky + .row {
+        padding-top: 5vh;
+    }
+}
+
+.selection-icon{
+    display:inline-block;
+    width:5vh;
+    height:5vh;
+    background-color:white;
+    margin:1px;
+}
+
+.icon-answered {
+    background-color: #61dafb;
+}
+.icon-correct {
+    background-color: forestgreen;
+}
+.icon-incorrect {
+    background-color: red;
+}
+
+.button-correct{
+    background-color:rgba(0,255,128,0.5);
+}
+.button-incorrect {
+    background-color: rgba(255,0,0,0.5);
+}
