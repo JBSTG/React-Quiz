@@ -88,6 +88,7 @@
                     <p>Created using ReactJS and ASP.NET WebAPI.</p>
                 </div>
                 <StickyQuestionProgressBar grades={this.state.answerGrades} quizCompleted={this.state.quizCompleted} selectedAnswers={this.state.selectedAnswers} />
+                <div className = "row spacer"></div>
                 {this.renderQuestions()}
                 <div className="row">
                     <div className="col-md-6 col-md-offset-2 col-12">

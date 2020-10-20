@@ -150,3 +150,7 @@ textarea {
 .button-incorrect {
     background-color: rgba(255,0,0,0.5);
 }
+
+.spacer{
+    height:5vh;
+}
